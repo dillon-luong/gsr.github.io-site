@@ -15,3 +15,7 @@ example code
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wiZxZ435T0o?si=EzAKTyvNzGTCmdu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p style="text-align:center">Center this text</p>
+
+<div style={{backgroundColor: 'violet', padding: '1rem'}}>
+  Try and change the background color to `tomato`.
+</div>
