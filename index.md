@@ -1,5 +1,4 @@
-Here you can say lots of fun things about your site.
+# This is the official blog for Golfin' Slayer Redux!
+Specifically, this will be used for posting dev logs of Golfin' Slayer's production.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+We hope you have a good day! 🤠
