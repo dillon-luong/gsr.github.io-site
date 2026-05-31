@@ -1,0 +1,15 @@
+## Golfin' Slayer's First Post!
+
+For now, this is a test before we do introductions.
+
+---
+
+```
+example code
+```
+
+### Sample Image
+<img src="https://www.istockphoto.com/photos/golf" alt="sample golf image">
+
+### Sample Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wiZxZ435T0o?si=EzAKTyvNzGTCmdu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
