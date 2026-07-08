@@ -10,7 +10,7 @@ example code
 
 ### Sample Image
 
-![Official Game Art]("/assets/images/game-title.png")
+![Official Game Art](/assets/images/game-title.png)
 
 ### Sample Video
 
