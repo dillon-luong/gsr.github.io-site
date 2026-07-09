@@ -46,18 +46,19 @@ hr {
 
 /* header */
 .site-header {
-  background-color: #352C51 !important;
+  background-color: #352C51;
+}
+
+.site-nav .page-link {
+  color: #ffffff;
+  font-family: 'Georgia', serif;
 }
 /* .site-title {
   color: #ffcc00 !important;
   font-family: 'Georgia', serif;
   font-size: 1.5em;
 } */
-/* .site-nav .page-link {
-  color: #ffffff !important;
-  font-family: 'Georgia', serif;
-}
-.site-icon {
+/* .site-icon {
   height: 32px;
   vertical-align: middle;
   margin-right: 8px;
