@@ -53,14 +53,15 @@ hr {
   color: #ffffff;
   font-family: 'Georgia', serif;
 }
+
 .site-header {
-  position: relative;
-  padding: 0;
+  display: flex;
+  align-items: center;
   border: 0;
 }
 
 .site-title {
-  height: 100%;
+  float: none;
 }
 .site-icon {
   position: absolute;
@@ -71,7 +72,8 @@ hr {
 }
 
 .wrapper {
-  height: 100% !important;
+  margin-left: auto;
+  margin-right: 0;
 }
 /* end header */
 
