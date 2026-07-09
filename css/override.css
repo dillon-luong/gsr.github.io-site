@@ -56,6 +56,11 @@ hr {
 .site-header {
   position: relative;
   padding: 0;
+  border: 0;
+}
+
+.site-title {
+  height: 100%;
 }
 .site-icon {
   position: absolute;
@@ -64,12 +69,18 @@ hr {
   height: 100%;
   width: auto;
 }
+
+.wrapper {
+  height: 100% !important;
+}
 /* end header */
 
 .page-content {
   background-color: #2C2732;
+  border: 0;
 }
 
 .site-footer {
   background-color: #352C51;
+  border: 0;
 }

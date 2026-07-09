@@ -34,8 +34,7 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-header_pages:
-  - archive.md
+baseurl: https://dillon-luong.github.io/gsr.github.io-site/
 
 defaults:
   - scope:
