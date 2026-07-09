@@ -9,8 +9,8 @@
   {% seo %}
   <!-- End SEO -->
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="/css/override.css">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ '/css/override.css' | relative_url }}">
 
   {% feed_meta %}
 
@@ -20,15 +20,15 @@
   <!-- End Google Analytics -->
   {%- endif %}
 
-  <!-- Begin highlight.js support -->
-  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+<!-- Begin highlight.js support -->
+  <link rel="stylesheet" href="{{ '/js/highlightjs/styles/github.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/js/highlightjs/styles/ssms.css' | relative_url }}" />
 
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
+  <script type="text/javascript" src="{{ '/js/highlightjs/highlight.min.js' | relative_url }}"></script>
 
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
+  <script type="text/javascript" src="{{ '/js/highlightjs/languages/plaintext.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/js/highlightjs/languages/powershell.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/js/highlightjs/languages/tsql.min.js' | relative_url }}"></script>
 
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
