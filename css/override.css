@@ -46,7 +46,7 @@ hr {
 
 /* header */
 .site-header {
-  background-color: #352C51;
+  background-color: #352C51 !important;
 }
 /* .site-title {
   color: #ffcc00 !important;
