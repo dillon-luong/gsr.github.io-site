@@ -43,13 +43,14 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+/* end post navi links */
 
 /* header */
 .site-header {
   background-color: #352C51;
 }
 
-.site-nav .page-link {
+.site-nav {
   color: #ffffff;
   font-family: 'Georgia', serif;
 }
@@ -73,43 +74,66 @@ hr {
 /* end header */
 
 .page-content {
-  background-color: #2C2732;
+  background-color: #EFF1DF;
   border: 0;
+  color: black;
 }
 
 /* fonts */
-
-.jersey-10-regular .page-link {
+.jersey-10-regular {
   font-family: "Jersey 10", sans-serif !important;
   font-weight: 400;
   font-style: normal;
+  color: white !important;
 }
 
 .page-link {
   font-size: 35px;
+  color: white !important;
+}
+
+.jersey-15-regular, .footer-tagline, .footer-quote, .page-link{
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  /* Disable browser font smoothing for sharp edges */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  
+  /* Optimize for speed/crispness over legibility-smoothing */
+  text-rendering: optimizespeed;
+  
+  /* If the font is being treated like an image in some contexts */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 body {
   color: white;
+  max-width: 1100px;
+  background-color: #2C2732;
+  align-self: center;
+  justify-self: center;
 }
-
 /* end fonts */
 
 /* footer */
 .site-footer {
   background-color: #352C51;
-  padding: 40px 30px;
+  padding: 0px 15px;
   border: 0;
 }
 
 .footer-col-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 5px auto;
   flex-wrap: wrap;
+  color: white;
 }
 
 .footer-col {
@@ -120,18 +144,23 @@ body {
 /* Column 1: Logos */
 .footer-col-1 {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  width: auto;
+}
+
+.footer-logo-icon, .footer-logo-text {
+  /* Keep these for responsiveness */
+  max-width: 45%; 
+  object-fit: contain;
 }
 
 .footer-logo-icon {
-  height: 70px;
-  width: auto;
+  width: 20%;
 }
 
 .footer-logo-text {
-  height: 60px;
-  width: auto;
+  width: 90%;
 }
 
 /* Column 2: Social + Copyright */
@@ -140,8 +169,8 @@ body {
 }
 
 .footer-tagline {
-  font-weight: bold;
   margin-bottom: 4px;
+  font-size: 30px;
 }
 
 .footer-copyright {
@@ -153,6 +182,7 @@ body {
 #footer-share-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 14px;
   background: #1a1730;
   padding: 8px 16px;
@@ -167,19 +197,26 @@ body {
   opacity: 0.85;
 }
 
+#footer-share-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #footer-share-buttons a:hover svg {
   opacity: 1;
 }
 
 /* Column 3: Newsletter */
 .footer-col-3 {
-  text-align: right;
+  text-align: center;
 }
 
 .footer-quote {
-  font-weight: bold;
   font-style: italic;
   margin-bottom: 4px;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .footer-quote-sub {
@@ -192,11 +229,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-end;
+  align-items: stretch;
+  width: 100%;
 }
 
 .footer-email-input {
-  width: 100%;
   padding: 8px 12px;
   background: transparent;
   border: 1px solid #ffffff;
@@ -209,11 +246,10 @@ body {
 }
 
 .footer-subscribe-btn {
-  width: 100%;
   padding: 10px;
-  background: transparent;
   border: 1px solid #ffffff;
-  color: #ffffff;
+  background: #ffffff;
+  color: #2e2a4d;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
@@ -221,7 +257,8 @@ body {
 }
 
 .footer-subscribe-btn:hover {
-  background: #ffffff;
-  color: #2e2a4d;
+  background: #1a1730;
+  color: #ffffff;
+  border: 1px solid #1a1730;
 }
 /* end footer */
