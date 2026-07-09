@@ -77,18 +77,151 @@ hr {
   border: 0;
 }
 
-.site-footer {
-  background-color: #352C51;
-  border: 0;
-}
-
 /* fonts */
-.jersey-10-regular {
-  font-family: "Jersey 10", sans-serif;
+
+.jersey-10-regular .page-link {
+  font-family: "Jersey 10", sans-serif !important;
   font-weight: 400;
   font-style: normal;
+}
+
+.page-link {
+  font-size: 35px;
 }
 
 body {
   color: white;
 }
+
+/* end fonts */
+
+/* footer */
+.site-footer {
+  background-color: #352C51;
+  padding: 40px 30px;
+  border: 0;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Column 1: Logos */
+.footer-col-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-icon {
+  height: 70px;
+  width: auto;
+}
+
+.footer-logo-text {
+  height: 60px;
+  width: auto;
+}
+
+/* Column 2: Social + Copyright */
+.footer-col-2 {
+  text-align: center;
+}
+
+.footer-tagline {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.footer-copyright {
+  font-size: 0.8em;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+#footer-share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  background: #1a1730;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#footer-share-buttons svg {
+  height: 16px;
+  fill: #ffffff;
+  opacity: 0.85;
+}
+
+#footer-share-buttons a:hover svg {
+  opacity: 1;
+}
+
+/* Column 3: Newsletter */
+.footer-col-3 {
+  text-align: right;
+}
+
+.footer-quote {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.footer-quote-sub {
+  font-size: 0.8em;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.footer-email-input {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.footer-email-input::placeholder {
+  color: #cccccc;
+}
+
+.footer-subscribe-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-subscribe-btn:hover {
+  background: #ffffff;
+  color: #2e2a4d;
+}
+/* end footer */
