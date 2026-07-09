@@ -15,8 +15,6 @@ instagram_username: golfin.slayer
 #youtube_username: username
 #googleplus_username: +username
 
-baseurl: "/gsr.github.io-site"
-
 theme: "minima"
 
 rss: rss
