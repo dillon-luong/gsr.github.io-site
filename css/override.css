@@ -53,13 +53,23 @@ hr {
   color: #ffffff;
   font-family: 'Georgia', serif;
 }
-/* .site-title {
-  color: #ffcc00 !important;
-  font-family: 'Georgia', serif;
-  font-size: 1.5em;
-} */
-/* .site-icon {
-  height: 32px;
-  vertical-align: middle;
-  margin-right: 8px;
-} */
+.site-header {
+  position: relative;
+  padding: 0;
+}
+.site-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+/* end header */
+
+.page-content {
+  background-color: #2C2732;
+}
+
+.site-footer {
+  background-color: #352C51;
+}

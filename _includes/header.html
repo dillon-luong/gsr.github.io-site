@@ -1,9 +1,10 @@
 <header class="site-header" role="banner">
+  <a class="site-title" rel="author" href="{{ " /" | relative_url }}">
+    <img src="{{ '/assets/images/sub-studio-icon.png' | relative_url }}" class="site-icon">
+  </a>
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-        <img src="{{ ''}}"
-    </a> -->
+    <!-- <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a> -->
+    
 
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
