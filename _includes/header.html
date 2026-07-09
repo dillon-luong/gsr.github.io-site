@@ -2,7 +2,7 @@
   <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
     <img src="{{ '/assets/images/sub-studio-icon.png' | relative_url }}" class="site-icon">
   </a>
-  <div class="wrapper">
+  <div class="wrapper" style="margin-left: auto; margin-right: 0;">
     {%- assign default_paths = site.pages | map: "path" -%}
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -14,7 +14,7 @@
         </span>
       </label>
 
-      <div class="trigger" style="justify-content: center; display: flex; gap: 16px;">
+      <div class="trigger jersey-10-regular" style="justify-content: center; display: flex; gap: 16px;">
         {%- for item in site.data.navigation -%}
         <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name | upcase }}</a>
         {%- endfor -%}

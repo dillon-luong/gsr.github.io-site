@@ -1,5 +1,5 @@
-
 <!-- Site build date: {{ "now" | date: "%FT%T%z" }} -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
   <!-- End Google Analytics -->
   {%- endif %}
 
-<!-- Begin highlight.js support -->
+  <!-- Begin highlight.js support -->
   <link rel="stylesheet" href="{{ '/js/highlightjs/styles/github.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/js/highlightjs/styles/ssms.css' | relative_url }}" />
 
@@ -33,5 +33,11 @@
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
 
+  <!-- favicon -->
   <link rel="icon" type="image/png" href="{{ '/assets/images/golfin-skull-favicon.png' | relative_url }}">
+
+  <!-- import fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>

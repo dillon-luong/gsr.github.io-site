@@ -70,11 +70,6 @@ hr {
   height: 100%;
   width: auto;
 }
-
-.wrapper {
-  margin-left: auto;
-  margin-right: 0;
-}
 /* end header */
 
 .page-content {
@@ -85,4 +80,15 @@ hr {
 .site-footer {
   background-color: #352C51;
   border: 0;
+}
+
+/* fonts */
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: white;
 }
