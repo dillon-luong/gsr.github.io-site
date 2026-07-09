@@ -15,7 +15,7 @@ instagram_username: golfin.slayer
 #youtube_username: username
 #googleplus_username: +username
 
-baseurl: https://dillon-luong.github.io/gsr.github.io-site/
+baseurl: "/gsr.github.io-site"
 
 theme: "minima"
 
