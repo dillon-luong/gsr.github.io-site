@@ -25,14 +25,20 @@ rss: rss
 kramdown:
   syntax_highlighter_opts:
     disable: true
-    
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# this auto creates title var from the first markdown heading in a file
+# strip_title prevents it from being rendered twice (once as an auto-gen title and again as the heading)
+# collections: extends this behavior to collections (_posts) not just top-level pages
 titles_from_headings:
   strip_title: true
   collections: true
+
+header_pages:
+  - archive.md
 
 defaults:
   - scope:
