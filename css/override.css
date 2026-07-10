@@ -329,19 +329,19 @@ body {
 :root {
   --landing-page-left-pad: 75px
 }
-.game-info, .blog-info {
+.game-info, .blog-info, .title-info {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 0px;
-  padding-left: var(--landing-page-left-pad);
 }
 
-.blog-info {
+.title-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  box-sizing: border-box;
-  padding: 0px var(--landing-page-left-pad);
 }
 
 .game-info {
@@ -352,6 +352,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0px;
+  padding-left: var(--landing-page-left-pad);
+}
+
+.blog-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px var(--landing-page-left-pad);
 }
 
 .game-tag {
@@ -464,5 +472,20 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.title-img {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.more-below-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.more-below-arrow svg {
+  display: block;
 }
 /* end landing page */
