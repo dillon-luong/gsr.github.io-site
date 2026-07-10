@@ -277,11 +277,11 @@ body {
   padding: 0px;
 }
 
-.landing-top, .landing-mid {
+.landing-top, .landing-mid, .landing-bot {
   position: relative;
 }
 
-.landing-top-bg, .landing-mid-bg {
+.landing-top-bg, .landing-mid-bg, .landing-bot-bg {
   display: block;
   width: 100%;
   max-width: none;
@@ -322,7 +322,7 @@ body {
 :root {
   --landing-page-left-pad: 75px
 }
-.game-info {
+.game-info, .blog-info {
   max-width: 550px;
   position: absolute;
   top: 0;
@@ -331,6 +331,9 @@ body {
   height: 100%;
   padding: 0px;
   padding-left: var(--landing-page-left-pad);
+}
+
+.game-info {
   color: white;
   box-sizing: border-box;
   display: flex;
@@ -376,5 +379,11 @@ body {
 .blog-info {
   padding: 0px;
   padding-left: var(--landing-page-left-pad);
+}
+
+.landing-bot {
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
 }
 /* end landing page */
