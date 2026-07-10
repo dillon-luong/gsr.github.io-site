@@ -149,18 +149,8 @@ body {
   width: auto;
 }
 
-.footer-logo-icon, .footer-logo-text {
-  /* Keep these for responsiveness */
-  max-width: 45%; 
-  object-fit: contain;
-}
-
-.footer-logo-icon {
-  width: 20%;
-}
-
-.footer-logo-text {
-  width: 90%;
+.footer-logo {
+  width: auto;
 }
 
 /* Column 2: Social + Copyright */
@@ -262,3 +252,59 @@ body {
   border: 1px solid #1a1730;
 }
 /* end footer */
+
+/* landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+.landing-page div {
+  margin-bottom: 5px;
+}
+
+.wrapper:has(.landing-page) {
+  width: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+
+.page-content:has(.landing-page) {
+  padding: 0px;
+}
+
+.landing-top, .landing-mid {
+  position: relative;
+}
+
+.landing-top-bg .landing-mid-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-mid-bg {
+
+}
+
+.landing-top p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
+
+.landing-mid p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
