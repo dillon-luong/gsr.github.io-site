@@ -39,7 +39,9 @@ baseurl: /gsr.github.io-site
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       layout: "post"
-      tags: Other
+      tags: Blog
+      thumbnail: "/assets/images/game-title.png"
+      title: "Untitled Devlog"

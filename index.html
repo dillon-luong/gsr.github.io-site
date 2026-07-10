@@ -5,23 +5,21 @@ layout: default
 <div class="landing-page">
   <div class="landing-top">
     <img src="{{ '/assets/images/contours-bg.png' | relative_url }}" class="landing-top-bg" alt=""/>
-    <p>
-      This is the official blog for Golfin' Slayer! Specifically, this will be
-      used for posting dev logs of Golfin' Slayer's production. We hope you have
-      a good day! 🤠
-    </p>
+    <div>
+        
+    </div>
   </div>
   <div class="landing-mid">
     <img src="{{ '/assets/images/game-title.png' | relative_url }}" class="landing-mid-bg" alt=""/>
     <div class="game-info">
-      <span class="game-tag jersey-15-regular" style="margin-bottom: 225px;">✦ GAME ✦</span>
-      <p class="game-status jersey-15-regular">In Development</p>
-      <p class="game-description jersey-15-regular">
+      <span class="game-tag" style="margin-bottom: 225px;">✦ GAME ✦</span>
+      <p class="game-status pixel-font">In Development</p>
+      <p class="game-description pixel-font">
         Sucked into a reality TV show, Caddy must maneuver the ever-twisting
         golf-courses and challenge sports legends to prove that golf is the most
         exciting sport to watch in the world.
       </p>
-      <div class="game-buttons jersey-15-regular">
+      <div class="game-buttons pixel-font">
         <a href="#" class="game-btn">LATEST PROGRESS</a>
         <a href="#" class="game-btn">STEAM PAGE COMING SOON!</a>
       </div>
@@ -35,7 +33,24 @@ layout: default
   <div class="landing-bot">
     <img src="{{ '/assets/images/contours-bg.png' | relative_url }}" class="landing-bot-bg" alt=""/>
     <div class="blog-info">
-        <span class="game-tag jersey-15-regular" style="margin-bottom: 100px">✦ NEWS ✦</span>
+        <span class="game-tag" style="margin-bottom: 70px">✦ NEWS ✦</span>
+        <div class="news-line">
+            {% for post in site.posts limit: 3 %}
+                <a href="{{ post.url | relative_url }}" class="news-item">
+                    <img src="{{ post.thumbnail | relative_url }}" class="news-item-thumbnail" alt="image not loading"/>
+                        <div class="news-item-sub">
+                            <div class="news-item-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                            <div class="news-item-title">{{ post.title }}</div>
+                            <div class="news-item-arrow">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                </a>
+            {% endfor %}
+        </div>
+        <a href="{{ '/archive.html' | relative_url }}" class="game-btn" style="font-size: 20px">SEE OUR BLOG</a>
     </div>
   </div>
 </div>

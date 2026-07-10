@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Pixel';
+  src: url('../assets/fonts/InexpugnableExtended.woff') format('woff');
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -80,25 +85,27 @@ hr {
 }
 
 /* fonts */
-.jersey-10-regular {
+/* .jersey-10-regular {
   font-family: "Jersey 10", sans-serif !important;
   font-weight: 400;
   font-style: normal;
   color: white !important;
-}
+} */
 
 .page-link {
   font-size: 35px;
   color: white !important;
 }
 
-.jersey-15-regular, 
+.pixel-font, 
 .footer-tagline, 
 .footer-quote, 
-.page-link {
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.page-link,
+.game-btn,
+.game-tag {
+  font-family: "Pixel", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
 
   /* Disable browser font smoothing for sharp edges */
   -webkit-font-smoothing: none;
@@ -323,17 +330,23 @@ body {
   --landing-page-left-pad: 75px
 }
 .game-info, .blog-info {
-  max-width: 550px;
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
   height: 100%;
   padding: 0px;
   padding-left: var(--landing-page-left-pad);
 }
 
+.blog-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px var(--landing-page-left-pad);
+}
+
 .game-info {
+  width: auto;
+  max-width: 550px;
   color: white;
   box-sizing: border-box;
   display: flex;
@@ -343,11 +356,12 @@ body {
 
 .game-tag {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: #A2667C;
   font-size: 20px;
   line-height: 1;
   color: white;
+  padding: 5px 0px;
 }
 
 .game-status {
@@ -376,14 +390,79 @@ body {
   padding: 5px 10px;
 }
 
-.blog-info {
-  padding: 0px;
-  padding-left: var(--landing-page-left-pad);
+.game-btn:visited {
+  color: white;
 }
 
 .landing-bot {
   max-height: 400px;
   overflow: hidden;
   position: relative;
+}
+
+.news-line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.news-item {
+  flex: 0 0 250px;
+  position: relative;
+  height: 200px;
+}
+
+.news-item-thumbnail {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.news-item-sub {
+  background-color: #15131D;
+  height: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #15131D 0%, #15131D 80%, transparent 100%);
+  box-sizing: border-box;
+}
+
+.news-item-date {
+  color: #575F4E;
+}
+
+.news-item-title {
+  color: white;
+}
+
+.news-item-arrow {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: bottom;
+}
+
+.news-item-arrow svg {
+  width: 28px;
+  height: 28px;
+  color: #AD9164; /* stroke uses currentColor, so this still works */
+  display: block;
+}
+
+.blog-info .game-btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* end landing page */
