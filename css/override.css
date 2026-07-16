@@ -57,7 +57,13 @@ hr {
 
 .site-nav {
   color: #ffffff;
-  font-family: 'Georgia', serif;
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: center;
+  display: flex;
+  gap: var(--fs-md);
+  padding-left: var(--fs-md);
+  padding-right: var(--fs-md);
 }
 
 .site-header {
@@ -286,6 +292,12 @@ body {
 
 .landing-top, .landing-mid, .landing-bot {
   position: relative;
+  min-height: 33vh;
+}
+
+.landing-top {
+  width: 100%;
+  /* aspect-ratio: 16 / 9; */
 }
 
 .landing-top-bg, .landing-mid-bg, .landing-bot-bg {
@@ -293,7 +305,7 @@ body {
   width: 100%;
   max-width: none;
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .landing-top-bg {
@@ -327,8 +339,16 @@ body {
 }
 
 :root {
-  --landing-page-left-pad: 75px
+  --landing-page-left-pad: 75px;
+  --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
+  --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
+  --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
+  --fs-lg: clamp(1.56rem, 0.78vi + 1.41rem, 2.11rem);
+  --fs-xl: clamp(1.95rem, 1.23vi + 1.71rem, 2.81rem);
+  --fs-xxl: clamp(2.44rem, 1.87vi + 2.07rem, 3.75rem);
+  --fs-xxxl: clamp(3.05rem, 2.78vi + 2.5rem, 5rem);
 }
+
 .game-info, .blog-info, .title-info {
   position: absolute;
   top: 0;
@@ -342,6 +362,8 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  gap: var(--fs-base);
+  font-size: var(--fs-base);
 }
 
 .game-info {
@@ -475,9 +497,8 @@ body {
 }
 
 .title-img {
-  max-width: 500px;
+  width: min(50%, 500px);
   height: auto;
-  margin-bottom: 20px;
 }
 
 .more-below-arrow {
@@ -488,4 +509,4 @@ body {
 .more-below-arrow svg {
   display: block;
 }
-/* end landing page */
+
