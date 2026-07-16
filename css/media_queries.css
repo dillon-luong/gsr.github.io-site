@@ -1,0 +1,43 @@
+@media (max-width: 576px) {
+  .footer-col-wrapper {
+    flex-direction: column;
+    gap: var(--fs-sm)
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-newsletter-form {
+    width: 60%;
+  }
+
+  .footer-logo {
+    width: 80%;
+  }
+
+  .footer-newsletter-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-top {
+    height: 400px; /* pick whatever height suits your overlay content on mobile */
+    overflow: hidden;
+  }
+
+  .landing-top-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .title-img {
+    width: 80%;
+  }
+}
