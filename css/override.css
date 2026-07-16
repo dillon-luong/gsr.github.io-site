@@ -55,15 +55,16 @@ hr {
   background-color: #352C51;
 }
 
-.site-nav {
+.header-nav {
   color: #ffffff;
   margin-left: auto;
   margin-right: 0;
   justify-content: center;
   display: flex;
-  gap: var(--fs-md);
+  gap: var(--fs-base);
   padding-left: var(--fs-md);
   padding-right: var(--fs-md);
+  font-size: var(--fs-xl)
 }
 
 .site-header {
@@ -99,7 +100,6 @@ hr {
 } */
 
 .page-link {
-  font-size: 35px;
   color: white !important;
 }
 
@@ -145,17 +145,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: var(--fs-md);
   max-width: 1200px;
-  margin: 5px auto;
+  margin: var(--fs-sm) auto;
   flex-wrap: wrap;
   color: white;
 }
 
 .footer-col {
   flex: 1;
-  min-width: 220px;
+  width: min(30%, 220px);
+  padding-left: 0;
+  margin-bottom: 0;
 }
+
+
 
 /* Column 1: Logos */
 .footer-col-1 {
@@ -169,20 +173,40 @@ body {
   width: auto;
 }
 
+@media (max-width: 576px) {
+  .footer-col-wrapper {
+    flex-direction: column;
+    gap: var(--fs-sm)
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-newsletter-form {
+    width: 60%;
+  }
+
+  .footer-logo {
+    width: 80%;
+  }
+}
+
 /* Column 2: Social + Copyright */
 .footer-col-2 {
   text-align: center;
 }
 
 .footer-tagline {
-  margin-bottom: 4px;
-  font-size: 30px;
+  font-size: var(--fs-lg);
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 .footer-copyright {
-  font-size: 0.8em;
+  font-size: var(--fs-sm);
   opacity: 0.8;
-  margin-bottom: 12px;
+  margin-bottom: var(--fs-sm);
 }
 
 #footer-share-buttons {
@@ -216,18 +240,21 @@ body {
 /* Column 3: Newsletter */
 .footer-col-3 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-quote {
   font-style: italic;
   margin-top: 3px;
   margin-bottom: 4px;
-  font-size: 21px;
+  font-size: calc(var(--fs-md) - 2px);
   line-height: 1;
 }
 
 .footer-quote-sub {
-  font-size: 0.8em;
+  font-size: var(--fs-sm);
   opacity: 0.8;
   margin-bottom: 16px;
 }
@@ -237,7 +264,14 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: stretch;
+  justify-content: center;
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  .footer-newsletter-form {
+    width: 60%;
+  }
 }
 
 .footer-email-input {
