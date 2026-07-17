@@ -166,16 +166,17 @@ body {
 /* Column 2: Social + Copyright */
 .footer-col-2 {
   text-align: center;
+  container-type: inline-size;
 }
 
 .footer-tagline {
-  font-size: var(--fs-lg);
+  font-size: 10cqi;
   margin-bottom: 0;
   line-height: 1;
 }
 
 .footer-copyright {
-  font-size: var(--fs-sm);
+  font-size: 5cqi;
   opacity: 0.8;
   margin-bottom: 3px;
 }
@@ -214,20 +215,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  container-type: inline-size;
 }
 
 .footer-quote {
   font-style: italic;
   margin-top: 3px;
   margin-bottom: 4px;
-  font-size: calc(var(--fs-md) - 2px);
+  font-size: 9cqi;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .footer-quote-sub {
-  font-size: var(--fs-sm);
+  font-size: 5cqi;
   opacity: 0.8;
-  margin-bottom: 16px;
+  margin-bottom: var(--fs-sm);
 }
 
 .footer-newsletter-form {
@@ -385,6 +388,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 0px var(--landing-page-left-pad);
+  height: 100%;
 }
 
 .game-tag {
@@ -423,6 +427,7 @@ body {
   padding: clamp(1px, .5vw, 5px) clamp(3px, 1vw, 10px);
   line-height: 1;
   width: fit-content;
+  white-space: nowrap;
 }
 
 .game-btn:visited {
@@ -437,11 +442,13 @@ body {
 
 .news-line {
   display: flex;
-  gap: 15px;
+  gap: min(2.5vw, 15px);
   justify-content: space-between;
-  overflow: hidden;
+  overflow-x: auto;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: min(5vw, 30px);
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .news-item {

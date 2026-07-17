@@ -4,6 +4,22 @@
     gap: var(--fs-sm)
   }
 
+  .footer-tagline {
+    font-size: var(--fs-lg)
+  }
+
+  .footer-copyright {
+    font-size: var(--fs-sm)
+  }
+
+  .footer-quote {
+    font-size: var(--fs-lg)
+  }
+
+  .footer-quote-sub {
+    font-size: var(--fs-sm)
+  }
+
   .footer-col {
     width: 100%;
   }
@@ -22,12 +38,16 @@
 }
 
 @media (max-width: 650px) {
-  .landing-top, .landing-mid {
+  .landing-top, .landing-mid{
     height: 400px; /* pick whatever height suits your overlay content on mobile */
     overflow: hidden;
   }
 
-  .landing-top-bg, .landing-mid-bg {
+  .landing-bot {
+    height: auto;
+  }
+
+  .landing-top-bg, .landing-mid-bg, .landing-bot-bg {
     position: absolute;
     top: 0;
     left: 0;

@@ -42,10 +42,10 @@ layout: default
     <hr style="background-color: #a2667c" />
   </div>
 
-  <!-- <div class="landing-bot">
+  <div class="landing-bot">
     <img src="{{ '/assets/images/contours-bg.png' | relative_url }}" class="landing-bot-bg" alt=""/>
     <div class="blog-info">
-        <span class="game-tag" style="margin-bottom: 70px">✦ NEWS ✦</span>
+        <span class="game-tag" style="margin-bottom: min(10vw, 70px)">✦ NEWS ✦</span>
         <div class="news-line">
             {% for post in site.posts limit: 3 %}
                 <a href="{{ post.url | relative_url }}" class="news-item">
@@ -64,5 +64,5 @@ layout: default
         </div>
         <a href="{{ '/archive.html' | relative_url }}" class="game-btn" style="font-size: 20px">SEE OUR BLOG</a>
     </div>
-  </div> -->
+  </div>
 </div>
