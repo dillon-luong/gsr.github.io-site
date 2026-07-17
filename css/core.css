@@ -89,6 +89,7 @@ hr {
   background-color: #EFF1DF;
   border: 0;
   color: black;
+  padding: 0px;
 }
 
 .page-link {
@@ -281,15 +282,11 @@ body {
   /* justify-content: center; */
 }
 
-.wrapper:has(.landing-page) {
-  width: 100%;
+.wrapper {
+    width: 100%;
   padding: 0px;
   margin: 0px !important;
   max-width: none;
-}
-
-.page-content:has(.landing-page) {
-  padding: 0px;
 }
 
 .landing-top, .landing-mid, .landing-bot {
@@ -391,6 +388,11 @@ body {
   height: 100%;
 }
 
+.title-text {
+    margin-bottom: auto;
+    width: 80%;
+}
+
 .game-tag {
   display: inline-block;
   margin-top: clamp(3px, 1vw, 10px);
@@ -404,6 +406,7 @@ body {
 .game-status {
   font-size: var(--fs-lg);
   margin-bottom: clamp(1px, .5vw, 5px);
+  white-space: nowrap;
 }
 
 .game-description {
@@ -521,6 +524,7 @@ body {
 .more-below-arrow svg {
   display: block;
 }
+/* end landing page */
 
 /* archive */
 .archive-page {
@@ -530,15 +534,10 @@ body {
 }
 
 .wrapper:has(.archive-page) {
-  width: 100%;
-  max-width: none;
-  padding: 0px;
-  margin: 0px !important;
   height: 100%;
 }
 
 .page-content:has(.archive-page) {
-  padding: 0px;
   background-image: url("../assets/images/contours-bg.png");
   background-size: cover;
   background-position: center center;
@@ -577,7 +576,20 @@ body {
     width: 10%;
     height: auto;
     position: relative;
-    /* left: 50%;
-    transform: translateX(-50%); */
 }
 /* end archive */
+
+/* posts */
+.wrapper:has(.post-content) {
+    margin: 20px !important;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.post-content iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Standard for YouTube */
+    height: auto;        /* Allows aspect-ratio to take control */
+    display: block;    
+}
+/* end posts */
