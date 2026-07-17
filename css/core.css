@@ -521,3 +521,61 @@ body {
 .more-below-arrow svg {
   display: block;
 }
+
+/* archive */
+.archive-page {
+    padding-left: var(--fs-sm);
+    padding-right: var(--fs-sm);
+    height: 100%;
+}
+
+.wrapper:has(.archive-page) {
+  width: 100%;
+  max-width: none;
+  padding: 0px;
+  margin: 0px !important;
+  height: 100%;
+}
+
+.page-content:has(.archive-page) {
+  padding: 0px;
+  background-image: url("../assets/images/contours-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tag-header {
+    font-size: var(--fs-xxl)
+}
+
+.archive-list {
+  display: flex;
+  gap: min(2.5vw, 15px);
+  width: 100%;
+  margin-bottom: min(5vw, 10px);
+  flex-wrap: wrap;
+}
+
+.archive-list .news-item {
+    flex: 1 1 calc(50% - min(2.5vw, 15px));
+    min-width: 280px; 
+    box-sizing: border-box;
+}
+
+.gif-set {
+    display: flex;
+    margin-bottom: clamp(1px, .7vw, 7px);
+    justify-content: center;
+    gap: var(--fs-base)
+}
+
+.sprite-gif {
+    width: 20%;
+    height: auto;
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+/* end archive */
