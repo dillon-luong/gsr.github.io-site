@@ -544,6 +544,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  align-content: center;
 }
 
 .tag-header {
@@ -566,13 +567,14 @@ body {
 
 .gif-set {
     display: flex;
-    margin-bottom: clamp(1px, .7vw, 7px);
     justify-content: center;
-    gap: var(--fs-base)
+    gap: var(--fs-base);
+    margin-top: auto;
+    margin-bottom: clamp(1px, .7vw, 7px);
 }
 
 .sprite-gif {
-    width: 20%;
+    width: 10%;
     height: auto;
     position: relative;
     /* left: 50%;
