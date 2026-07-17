@@ -35,6 +35,12 @@
   .footer-newsletter-form {
     width: 60%;
   }
+
+  .game-info {
+    width: 70%;
+  }
+
+  
 }
 
 @media (max-width: 650px) {
@@ -57,12 +63,20 @@
     object-position: center;
   }
 
+  .landing-mid-bg {
+    object-position: left center;
+  }
+
   .title-img {
     width: 80%;
   }
 
   .title-text {
     width: 100%;
+  }
+
+  .game-description {
+    font-size: var(--fs-bs);
   }
 }
 
