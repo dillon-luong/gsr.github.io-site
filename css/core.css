@@ -294,7 +294,7 @@ body {
   min-height: 40vh;
 }
 
-.landing-top {
+.landing-top, .landing-mid {
   width: 100%;
 }
 
@@ -341,7 +341,7 @@ body {
 }
 
 :root {
-  --landing-page-left-pad: 75px;
+  --landing-page-left-pad: clamp(10px, 8vw, 75px);
   --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
   --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
   --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
@@ -369,7 +369,7 @@ body {
 }
 
 .game-info {
-  width: auto;
+  width: 50%;
   max-width: 550px;
   color: white;
   box-sizing: border-box;
@@ -378,6 +378,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   padding-left: var(--landing-page-left-pad);
+  container-type: size;
 }
 
 .blog-info {
@@ -388,38 +389,40 @@ body {
 
 .game-tag {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: clamp(3px, 1vw, 10px);
   background-color: #A2667C;
-  font-size: 20px;
+  font-size: var(--fs-base);
   line-height: 1;
   color: white;
-  padding: 5px 0px;
+  padding: clamp(1px, .5vw, 5px) 0px;
 }
 
 .game-status {
-  font-size: 23px;
-  margin-bottom: 5px;
+  font-size: var(--fs-lg);
+  margin-bottom: clamp(1px, .5vw, 5px);
 }
 
 .game-description {
-  width: 415px;
-  font-size: 20px;
-  line-height: 1;
+  width: min(100%, 415px);
+  font-size: var(--fs-base);
+  line-height: .8;
 }
 
 .game-buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--fs-base);
   align-items: flex-start;
-  font-size: 25px;
+  font-size: var(--fs-md);
 }
 
 .game-btn {
   display: inline-block;
   background-color: #A2667C;
   color: white;
-  padding: 5px 10px;
+  padding: clamp(1px, .5vw, 5px) clamp(3px, 1vw, 10px);
+  line-height: 1;
+  width: fit-content;
 }
 
 .game-btn:visited {

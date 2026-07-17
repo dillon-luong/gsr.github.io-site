@@ -21,13 +21,13 @@
   }
 }
 
-@media (max-width: 600px) {
-  .landing-top {
+@media (max-width: 650px) {
+  .landing-top, .landing-mid {
     height: 400px; /* pick whatever height suits your overlay content on mobile */
     overflow: hidden;
   }
 
-  .landing-top-bg {
+  .landing-top-bg, .landing-mid-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,3 +41,4 @@
     width: 80%;
   }
 }
+
