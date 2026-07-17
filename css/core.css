@@ -3,6 +3,11 @@
   src: url('../assets/fonts/InexpugnableExtended.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Pixel-Small';
+  src: url('../assets/fonts/RhymeExtended.woff') format('woff');
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -103,8 +108,21 @@ hr {
 .game-btn,
 .game-tag {
   font-family: "Pixel", sans-serif;
-  /* font-weight: 400;
-  font-style: normal; */
+
+  /* Disable browser font smoothing for sharp edges */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  
+  /* Optimize for speed/crispness over legibility-smoothing */
+  text-rendering: optimizespeed;
+  
+  /* If the font is being treated like an image in some contexts */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-small-font {
+    font-family: "Pixel-Small", sans-serif;
 
   /* Disable browser font smoothing for sharp edges */
   -webkit-font-smoothing: none;
@@ -234,11 +252,29 @@ body {
   margin-bottom: var(--fs-sm);
 }
 
+.formkit-fields {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(5px, 1vw, 10px); 
+    justify-content: center;
+}
+
+.formkit-alert-success {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
 .footer-newsletter-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: stretch;
+  /* gap: 10px; */
+  align-items: stretch !important;
   justify-content: center;
   width: 100%;
 }
@@ -249,6 +285,8 @@ body {
   border: 1px solid #ffffff;
   color: #ffffff;
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-email-input::placeholder {
@@ -411,7 +449,7 @@ body {
 
 .game-description {
   width: min(100%, 415px);
-  font-size: var(--fs-base);
+  font-size: var(--fs-md);
   line-height: .8;
 }
 
@@ -516,6 +554,9 @@ body {
   height: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .more-below-arrow {
   display: flex;
   justify-content: center;
