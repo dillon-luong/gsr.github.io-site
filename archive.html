@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="archive-page">
+  {% for tag in site.tags %}
+    <div class="tag-header pixel-font">{{ tag[0] }}</div>
+      <div class="archive-list">
+        {% for post in tag[1] %}
+          <a href="{{ post.url | relative_url }}" class="news-item">
+            <img src="{{ post.thumbnail | relative_url }}" class="news-item-thumbnail" alt="image not loading"/>
+            <div class="news-item-sub">
+                <div class="news-item-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                <div class="news-item-title">{{ post.title }}</div>
+                <div class="news-item-arrow">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+  {% endfor %}
+  <div class="gif-set">
+    <img class="sprite-gif" src="{{ '/assets/gifs/teeth.gif' | relative_url }}">
+    <img class="sprite-gif" src="{{ '/assets/gifs/witch.gif' | relative_url }}">
+    <img class="sprite-gif" src="{{ '/assets/gifs/birdie.gif' | relative_url }}">
+  </div>
+</div>

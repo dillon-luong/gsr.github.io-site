@@ -1,0 +1,595 @@
+@font-face {
+  font-family: 'Pixel';
+  src: url('../assets/fonts/InexpugnableExtended.woff') format('woff');
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Post navigation links */
+.post_navi {
+  display: flex;
+}
+
+.post_navi-label {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.post_navi .post_navi-item {
+  padding: 0 2.2em;
+  width: 50%;
+  position: relative;
+  color: inherit !important;
+}
+
+.post_navi .nav_prev {
+  text-align: left;
+}
+
+.post_navi .nav_next {
+  text-align: right;
+}
+
+.post_navi .nav_prev .post_navi-arrow {
+  left: 0;
+}
+
+.post_navi .nav_next .post_navi-arrow {
+  right: 0;
+}
+
+.post_navi .post_navi-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  opacity: 0.3;
+}
+/* end post navi links */
+
+/* header */
+.site-header {
+  background-color: #352C51;
+}
+
+.header-nav {
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: center;
+  display: flex;
+  gap: var(--fs-base);
+  padding-left: var(--fs-md);
+  padding-right: var(--fs-md);
+  font-size: var(--fs-xl)
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  border: 0;
+}
+
+.site-title {
+  float: none;
+}
+.site-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+/* end header */
+
+.page-content {
+  background-color: #EFF1DF;
+  border: 0;
+  color: black;
+  padding: 0px;
+}
+
+.page-link {
+  color: white !important;
+}
+
+.pixel-font, 
+.footer-tagline, 
+.footer-quote, 
+.page-link,
+.game-btn,
+.game-tag {
+  font-family: "Pixel", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+
+  /* Disable browser font smoothing for sharp edges */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  
+  /* Optimize for speed/crispness over legibility-smoothing */
+  text-rendering: optimizespeed;
+  
+  /* If the font is being treated like an image in some contexts */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+body {
+  color: white;
+  max-width: 1000px;
+  background-color: #2C2732;
+  align-self: center;
+  justify-self: center;
+}
+/* end fonts */
+
+/* footer */
+.site-footer {
+  background-color: #352C51;
+  padding: 0px 15px;
+  border: 0;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--fs-md);
+  max-width: 1200px;
+  margin: var(--fs-sm) auto;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer-col {
+  flex: 1;
+  width: min(30%, 220px);
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* Column 1: Logos */
+.footer-col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.footer-logo {
+  width: auto;
+}
+
+/* Column 2: Social + Copyright */
+.footer-col-2 {
+  text-align: center;
+  container-type: inline-size;
+}
+
+.footer-tagline {
+  font-size: 10cqi;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.footer-copyright {
+  font-size: 5cqi;
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+
+#footer-share-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  background: #1a1730;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#footer-share-buttons svg {
+  height: 16px;
+  fill: #ffffff;
+  opacity: 0.85;
+}
+
+#footer-share-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-share-buttons a:hover svg {
+  opacity: 1;
+}
+
+/* Column 3: Newsletter */
+.footer-col-3 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  container-type: inline-size;
+}
+
+.footer-quote {
+  font-style: italic;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  font-size: 9cqi;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.footer-quote-sub {
+  font-size: 5cqi;
+  opacity: 0.8;
+  margin-bottom: var(--fs-sm);
+}
+
+.footer-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-email-input {
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.footer-email-input::placeholder {
+  color: #cccccc;
+}
+
+.footer-subscribe-btn {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: #2e2a4d;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-subscribe-btn:hover {
+  background: #1a1730;
+  color: #ffffff;
+  border: 1px solid #1a1730;
+}
+/* end footer */
+
+/* landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+.wrapper {
+    width: 100%;
+  padding: 0px;
+  margin: 0px !important;
+  max-width: none;
+}
+
+.landing-top, .landing-mid, .landing-bot {
+  position: relative;
+  min-height: 40vh;
+}
+
+.landing-top, .landing-mid {
+  width: 100%;
+}
+
+.landing-top-bg, .landing-mid-bg, .landing-bot-bg {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.landing-top-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.landing-top p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
+
+.landing-bot {
+  width: 100%;
+  height: auto;
+}
+
+.landing-divider {
+  height: auto;
+  width: 100%;
+}
+
+.landing-divider hr {
+  border: none;
+  height: 8px;
+  width: 100%;
+  margin: 0px;
+}
+
+:root {
+  --landing-page-left-pad: clamp(10px, 8vw, 75px);
+  --fs-sm: clamp(0.8rem, 0.13vi + 0.77rem, 0.89rem);
+  --fs-base: clamp(1rem, 0.27vi + 0.95rem, 1.19rem);
+  --fs-md: clamp(1.25rem, 0.48vi + 1.15rem, 1.58rem);
+  --fs-lg: clamp(1.56rem, 0.78vi + 1.41rem, 2.11rem);
+  --fs-xl: clamp(1.95rem, 1.23vi + 1.71rem, 2.81rem);
+  --fs-xxl: clamp(2.44rem, 1.87vi + 2.07rem, 3.75rem);
+  --fs-xxxl: clamp(3.05rem, 2.78vi + 2.5rem, 5rem);
+}
+
+.game-info, .blog-info, .title-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: var(--fs-sm);
+  font-size: var(--fs-base);
+}
+
+.game-info {
+  width: 50%;
+  max-width: 550px;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  padding-left: var(--landing-page-left-pad);
+  container-type: size;
+}
+
+.blog-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px var(--landing-page-left-pad);
+  height: 100%;
+}
+
+.title-text {
+    margin-bottom: auto;
+    width: 80%;
+}
+
+.game-tag {
+  display: inline-block;
+  margin-top: clamp(3px, 1vw, 10px);
+  background-color: #A2667C;
+  font-size: var(--fs-base);
+  line-height: 1;
+  color: white;
+  padding: clamp(1px, .5vw, 5px) 0px;
+}
+
+.game-status {
+  font-size: var(--fs-lg);
+  margin-bottom: clamp(1px, .5vw, 5px);
+  white-space: nowrap;
+}
+
+.game-description {
+  width: min(100%, 415px);
+  font-size: var(--fs-base);
+  line-height: .8;
+}
+
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-base);
+  align-items: flex-start;
+  font-size: var(--fs-md);
+}
+
+.game-btn {
+  display: inline-block;
+  background-color: #A2667C;
+  color: white;
+  padding: clamp(1px, .5vw, 5px) clamp(3px, 1vw, 10px);
+  line-height: 1;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.game-btn:visited {
+  color: white;
+}
+
+.landing-bot {
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-line {
+  display: flex;
+  gap: min(2.5vw, 15px);
+  justify-content: space-between;
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: min(5vw, 30px);
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.news-item {
+  flex: 0 0 250px;
+  position: relative;
+  height: 200px;
+}
+
+.news-item-thumbnail {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.news-item-sub {
+  background-color: #15131D;
+  height: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #15131D 0%, #15131D 80%, transparent 100%);
+  box-sizing: border-box;
+}
+
+.news-item-date {
+  color: #575F4E;
+}
+
+.news-item-title {
+  color: white;
+}
+
+.news-item-arrow {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: bottom;
+}
+
+.news-item-arrow svg {
+  width: 28px;
+  height: 28px;
+  color: #AD9164; /* stroke uses currentColor, so this still works */
+  display: block;
+}
+
+.blog-info .game-btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-img {
+  width: min(50%, 500px);
+  height: auto;
+}
+
+.more-below-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.more-below-arrow svg {
+  display: block;
+}
+/* end landing page */
+
+/* archive */
+.archive-page {
+    padding-left: var(--fs-sm);
+    padding-right: var(--fs-sm);
+    height: 100%;
+}
+
+.wrapper:has(.archive-page) {
+  height: 100%;
+}
+
+.page-content:has(.archive-page) {
+  background-image: url("../assets/images/contours-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-content: center;
+}
+
+.tag-header {
+    font-size: var(--fs-xxl)
+}
+
+.archive-list {
+  display: flex;
+  gap: min(2.5vw, 15px);
+  width: 100%;
+  margin-bottom: min(5vw, 10px);
+  flex-wrap: wrap;
+}
+
+.archive-list .news-item {
+    flex: 1 1 calc(50% - min(2.5vw, 15px));
+    min-width: 280px; 
+    box-sizing: border-box;
+}
+
+.gif-set {
+    display: flex;
+    justify-content: center;
+    gap: var(--fs-base);
+    margin-top: auto;
+    margin-bottom: clamp(1px, .7vw, 7px);
+}
+
+.sprite-gif {
+    width: 10%;
+    height: auto;
+    position: relative;
+}
+/* end archive */
+
+/* posts */
+.wrapper:has(.post-content) {
+    margin: 20px !important;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.post-content iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Standard for YouTube */
+    height: auto;        /* Allows aspect-ratio to take control */
+    display: block;    
+}
+/* end posts */
