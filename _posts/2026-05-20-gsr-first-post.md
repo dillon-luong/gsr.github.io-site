@@ -2,7 +2,7 @@
 thumbnail: /assets/images/gs-title-bg.png
 ---
 
-## Golfin' Slayer's Introductory Post!
+## Golfin' Slayer Introductory Post!
 
 It’s the eighties. After a 14-hour shift at the gear factory, you come back home and turn on the television. But, what’s a good sport to watch? The unpredictable matches of soccer? The brutal games of football? Maybe the sophisticated game of golf that seemingly has a subliminal tie to status?<br>
 
@@ -32,7 +32,11 @@ But without further ado, **welcome to Golfin’ Slayer!** Where the golf balls a
 
 <!--div align="center"-->
   
-![Golf Lich](/assets/images/golf-lich.png)
+<!--![Golf Lich](/assets/images/golf-lich.png)-->
+
+<div style="margin-left: auto; margin-right: auto;">
+  <img src=/assets/images/golf-lich.png width="600" alt="Golf Lich">
+</div>
 
 <!--/div-->
 
