@@ -59,6 +59,6 @@ There are so many ideas that we want to explore with and that we hope to share i
 
 Until next time, see you on the green.<br>
 
-![Caddy Rotates](/assets/images/caddy-rotating.gif)
+![Caddy Rotates](/gifs/images/caddy-rotating.gif)
 
 <p style="text-align:center">Center this text</p>
