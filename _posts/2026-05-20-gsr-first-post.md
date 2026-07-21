@@ -1,3 +1,7 @@
+---
+thumbnail: /assets/images/gs-title-bg.png
+---
+
 ## Golfin' Slayer's First Post!
 
 For now, this is a test before we do introductions.
@@ -10,7 +14,7 @@ example code
 
 ### Sample Image
 
-![Official Game Art]({{ '/assets/images/game-title.png' | relative_url }})
+![Official Game Art](/assets/images/game-title.png)
 
 ### Sample Video
 
