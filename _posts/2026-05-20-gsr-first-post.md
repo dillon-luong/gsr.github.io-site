@@ -1,3 +1,7 @@
+---
+thumbnail: {{ '/assets/images/game-title.png' | relative_url }}
+---
+
 ## Golfin' Slayer's First Post!
 
 It’s the eighties. After a 14-hour shift at the gear factory, you come back home and turn on the television. But, what’s a good sport to watch? The unpredictable matches of soccer? The brutal games of football? Maybe the sophisticated game of golf that seemingly has a subliminal tie to status? 
