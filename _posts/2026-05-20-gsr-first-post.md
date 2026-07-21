@@ -81,5 +81,3 @@ Until next time, see you on the green.<br>
 ![Caddy Rotates](/assets/gifs/caddy-rotating.gif)
 
 </div>
-
-<p style="text-align:center">Center this text</p>
