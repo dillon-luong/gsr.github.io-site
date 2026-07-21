@@ -32,8 +32,13 @@ But without further ado, **welcome to Golfin’ Slayer!** Where the golf balls a
 
 <!--div align="center"-->
   
-<!--![Golf Lich](/assets/images/golf-lich.png)-->
+![Golf Lich](/assets/images/golf-lich.png)
 
+<div align="center">
+  <img src="/assets/images/golf-lich.png" alt="Golf Lich">
+</div>
+
+<!--
 <div style="margin-left: auto; margin-right: auto;">
   <img src=/assets/images/golf-lich.png width="600" alt="Golf Lich">
 </div>
