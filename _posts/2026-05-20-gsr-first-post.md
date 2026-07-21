@@ -30,9 +30,9 @@ While we do want these blogs to demonstrate progress, they’re also a chance to
 
 But without further ado, **welcome to Golfin’ Slayer!** Where the golf balls are alive, the courses change in weird and wild ways, and where the golf lich is out to prove to the television network that golf is the best sport of them all.<br>
 
-<p align="center">
+<div align="center">
 ![Golf Lich](/assets/images/golf-lich.png)
-</p>
+</div>
 
 ### What is Golfin' Slayer?
 
@@ -44,20 +44,20 @@ Now as part-man, part-golf ball, Caddy must swing, drive, and putt his way throu
 
 As it turns out, all souls are spherical, meaning naturally they're golf balls as well. So when Caddy defeats an enemy, they transform into a golf ball. He'll then need to drive that newly-created golf ball into the scorehole using as few swings as possible. The less swings, the more points he’ll get to spend at the shop. But it won’t be easy, as each level is a different golf course with their own myriads of hazards and monsters to contend with.<br>
 
-<p align="center">
+<div align="center">
 ![Tired Caddy](/assets/images/caddy-tired-menu.webp)
-</p>
-<p align="center">
+</div>
+<div align="center">
 ![Remote Menu](/assets/images/caddy-remote.webp)
-</p>
+</div>
 
 With that, Caddy can’t do this alone. He’ll need the help of sponsors! They represent rival sports, so they’re not helping out of the kindness of their hearts. Instead, they’re chasing ratings, eager to support what could be the star of the television’s next biggest hit. Each sponsor grants powerful abilities that affect Caddy’s run in unique ways, which are given after completing an unique trial. One might supercharge Caddy's speed, while another lets him ricochet golf balls into devastating headshots.<br>
 
 But what lies ahead for Caddy? Will he meet the love of his life, Puttnelope? Will he finally prove, once and for all, that golf is the single greatest achievement of golf civilization? Will be able to overcome the all-powerful golf lich and his thirst for ratings on golf? Only time will tell.<br>
 
-<p align="center">
+<div align="center">
 ![Caddy Dead](/assets/images/caddy-dead.webp)
-</p>
+</div>
 
 ### Closing Notes
 
@@ -67,8 +67,8 @@ There are so many ideas that we want to explore with and that we hope to share i
 
 Until next time, see you on the green.<br>
 
-<p align="center">
+<div align="center">
 ![Caddy Rotates](/assets/gifs/caddy-rotating.gif)
-</p>
+</div>
 
 <p style="text-align:center">Center this text</p>
