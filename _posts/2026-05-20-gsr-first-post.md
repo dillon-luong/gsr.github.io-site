@@ -20,7 +20,9 @@ Who would want to watch golf?<br>
 
 That’s where we come in, seeking to make golf the premier sport of the world! How, you may ask? With just a touch here and converting-every-soul-into-a-golf-ball there, we introduce to you Golfin’ Slayer! And we’re here to show you why golf beats every other sport in being the most exciting sport in the world.<br>
 
-![Official Game Art](/assets/images/game-title.png)
+<div align="center">
+  <img src="/assets/images/game-title.png" alt="Official Game Art">
+</div>
 
 Before we go over the game itself, we’d like to formally introduce ourselves. Hi! We’re a small indie team of designers, programmers, artists who met in college during our video game capstone course. The initial capstone project was led by Branden, our now creative lead, and was made in about 15 weeks. To Branden, this project has been his baby for years, pieced together from countless little ideas gathered while working on other games and asking himself how to make golf more exciting. From various playtests and showcases, there was a lot of positive feedback on the game’s potential. Now that college is done, we’ve decided to expand the game beyond its original scope and develop it into a complete experience.<br>
 
@@ -30,20 +32,9 @@ While we do want these blogs to demonstrate progress, they’re also a chance to
 
 But without further ado, **welcome to Golfin’ Slayer!** Where the golf balls are alive, the courses change in weird and wild ways, and where the golf lich is out to prove to the television network that golf is the best sport of them all.<br>
 
-<!--div align="center"-->
-  
-![Golf Lich](/assets/images/golf-lich.png)
-
 <div align="center">
   <img src="/assets/images/golf-lich.png" alt="Golf Lich">
 </div>
-
-<!--
-<div style="margin-left: auto; margin-right: auto;">
-  <img src=/assets/images/golf-lich.png width="600" alt="Golf Lich">
-</div>
-
-<!--/div-->
 
 ### What is Golfin' Slayer?
 
@@ -55,27 +46,21 @@ Now as part-man, part-golf ball, Caddy must swing, drive, and putt his way throu
 
 As it turns out, all souls are spherical, meaning naturally they're golf balls as well. So when Caddy defeats an enemy, they transform into a golf ball. He'll then need to drive that newly-created golf ball into the scorehole using as few swings as possible. The less swings, the more points he’ll get to spend at the shop. But it won’t be easy, as each level is a different golf course with their own myriads of hazards and monsters to contend with.<br>
 
-<!--div align="center"-->
-  
-![Tired Caddy](/assets/images/caddy-tired-menu.webp)
+<div align="center">
+  <img src="/assets/images/caddy-tired-menu.webp" alt="Tired Caddy">
+</div>
 
-<!--/div-->
-
-<!--div align="center"-->
-  
-![Remote Menu](/assets/images/caddy-remote.webp)
-
-<!--/div-->
+<div align="center">
+  <img src="/assets/images/caddy-remote.webp" alt="Caddy Remote">
+</div>
 
 With that, Caddy can’t do this alone. He’ll need the help of sponsors! They represent rival sports, so they’re not helping out of the kindness of their hearts. Instead, they’re chasing ratings, eager to support what could be the star of the television’s next biggest hit. Each sponsor grants powerful abilities that affect Caddy’s run in unique ways, which are given after completing an unique trial. One might supercharge Caddy's speed, while another lets him ricochet golf balls into devastating headshots.<br>
 
 But what lies ahead for Caddy? Will he meet the love of his life, Puttnelope? Will he finally prove, once and for all, that golf is the single greatest achievement of golf civilization? Will be able to overcome the all-powerful golf lich and his thirst for ratings on golf? Only time will tell.<br>
 
-<!--div align="center"-->
-  
-![Caddy Dead](/assets/images/caddy-dead.webp)
-
-<!--/div-->
+<div align="center">
+  <img src="/assets/images/caddy-dead.webp" alt="Dead Caddy">
+</div>
 
 ### Closing Notes
 
@@ -85,8 +70,6 @@ There are so many ideas that we want to explore with and that we hope to share i
 
 Until next time, see you on the green.<br>
 
-<!--div align="center"-->
-  
-![Caddy Rotates](/assets/gifs/caddy-rotating.gif)
-
-<!--/div-->
+<div align="center">
+  <img src="/assets/gifs/caddy-rotating.gif" alt="Rotating Caddy">
+</div>
